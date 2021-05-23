@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/api",
+      "lambdaFunction": "maskrecogniselambda",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/api"
+    }
+  ],
+  "resourceName": "maskrecogniseapi",
+  "apiName": "maskrecogniseapi",
+  "functionArns": [
+    {
+      "lambdaFunction": "maskrecogniselambda"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-maskrecognise-dev-175436-authRole",
+    "unAuthRoleName": "amplify-maskrecognise-dev-175436-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "maskrecogniselambda",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

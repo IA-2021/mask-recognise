@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-maskrecognise-dev-175436-authRole",
+      "UnauthRoleArn": "arn:aws:iam::823038259676:role/amplify-maskrecognise-dev-175436-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::823038259676:role/amplify-maskrecognise-dev-175436-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-maskrecognise-dev-175436-deployment",
+      "UnauthRoleName": "amplify-maskrecognise-dev-175436-unauthRole",
+      "StackName": "amplify-maskrecognise-dev-175436",
+      "StackId": "arn:aws:cloudformation:us-east-1:823038259676:stack/amplify-maskrecognise-dev-175436/17d73740-bc09-11eb-94e1-0a4f97d4255b",
+      "AmplifyAppId": "d360zptqunxc38"
+    },
+    "categories": {
+      "function": {
+        "maskrecogniselambda": {
+          "deploymentBucketName": "amplify-maskrecognise-dev-175436-deployment",
+          "s3Key": "amplify-builds/maskrecogniselambda-72693643387333616b6c-build.zip"
+        }
+      }
+    }
+  }
+}
