@@ -15,7 +15,13 @@
       "function": {
         "maskrecogniselambda": {
           "deploymentBucketName": "amplify-maskrecognise-dev-175436-deployment",
-          "s3Key": "amplify-builds/maskrecogniselambda-72693643387333616b6c-build.zip"
+          "s3Key": "amplify-builds/maskrecogniselambda-5030686d67654b6e5a35-build.zip"
+        }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d360zptqunxc38",
+          "type": "manual"
         }
       }
     }
