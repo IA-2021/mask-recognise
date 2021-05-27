@@ -3,6 +3,7 @@
 }
 
 :root {
+    --vh: 1rem;
     --bg: #000;
     --c-white: #fff;
     --c-gray: #495057;
@@ -19,7 +20,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg);
     width: 100vw;
-    height: 100vh;
+    height: calc(100 * var(--vh));
     display: flex;
     flex-direction: column;
 }
@@ -108,9 +109,15 @@ button.capture {
     padding: 0.5rem 1rem;
     color: var(--c-text);
     background-color: var(--c-white);
-    width: 33vw;
+    width: 90vw;
     border-radius: 0.5rem;
     border: 1px solid var(--c-gray);
+}
+
+@media only screen and (min-width: 600px) {
+    .modal-dialog {
+        width: 33vw;
+    }
 }
 
 .backdrop {
