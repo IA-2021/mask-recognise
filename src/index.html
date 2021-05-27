@@ -2,11 +2,56 @@
 <html>
     <head>
         <title>IA- WEB APP</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Bienvenidos</h1>
+        <video id="camera" autoplay></video>
+
+        <nav>
+            <button id="capture" class="capture"></button>
+            <button id="upload" class="upload">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 18 L16 14 21 18 M16 14 L16 29" />
+                </svg>
+            </button>
+        </nav>
+
+        <div class="backdrop" id="loading">
+            <div class="loading-logo center">
+                <svg width="300" height="300" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line class="line l2" x1="11.7465" y1="28.569" x2="45.7465" y2="8.56903" />
+                    <line class="line l2" x1="12.2236" y1="28.5528" x2="46.2236" y2="45.5528" />
+                    <line class="line l2" x1="11.7764" y1="62.5528" x2="45.7764" y2="45.5528" />
+                    <line class="line l2" x1="12.2684" y1="62.5782" x2="45.2684" y2="83.5782" />
+                    <line class="line l2" x1="11.5792" y1="61.73" x2="45.5792" y2="8.73002" />
+                    <line class="line l2" x1="12.4266" y1="28.7393" x2="45.4266" y2="82.7393" />
+                    <line class="line l3" x1="46.3731" y1="8.66719" x2="79.3731" y2="45.6672" />
+                    <line class="line l3" x1="46" y1="45.5" x2="79" y2="45.5" />
+                    <line class="line l3" x1="44.6318" y1="82.6617" x2="78.6318" y2="45.6617" />
+                    <circle class="circle l1" cx="12.5" cy="27.5" r="6.5" />
+                    <circle class="circle l1" cx="12.5" cy="62.5" r="6.5" />
+                    <circle class="circle l2" cx="45.5" cy="9.5" r="6.5" />
+                    <circle class="circle l2" cx="45.5" cy="45.5" r="6.5" />
+                    <circle class="circle l2" cx="45.5" cy="81.5" r="6.5" />
+                    <circle class="circle l3" cx="78.5" cy="45.5" r="6.5" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="modal backdrop" id="dialog">
+            <div class="modal-dialog center">
+                <header class="fs-2">Resultado</header>
+                <main></main>
+                <footer>
+                    <button>Volver a escanear</button>
+                </footer>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
 
