@@ -15,7 +15,7 @@
       "function": {
         "maskrecogniselambda": {
           "deploymentBucketName": "amplify-maskrecognise-dev-175436-deployment",
-          "s3Key": "amplify-builds/maskrecogniselambda-5030686d67654b6e5a35-build.zip"
+          "s3Key": "amplify-builds/maskrecogniselambda-776c6957317066425533-build.zip"
         }
       },
       "hosting": {
